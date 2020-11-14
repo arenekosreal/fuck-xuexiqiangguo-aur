@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name = Fuck-XuexiQiangguo
+Name[zh_CN] = Fuck学习强国
+Comment = Automatically Learning XuexiQiangguo
+Comment[zh_CN] = 自动学习学习强国
+Exec = fuck-xuexiqiangguo
+Icon = fuck-xuexiqiangguo.png
+Terminal = false
+Categories = Network
