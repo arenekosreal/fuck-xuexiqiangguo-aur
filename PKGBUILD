@@ -30,7 +30,7 @@ prepare(){
 	install -D ${srcdir}/${pkgname}/logo.png build/logo.png
 	install -D ${srcdir}/arguments.json arguments.json
 	yarn add electron-builder --dev
-	#sed -i '9s/3.0.16/`jq .electron package.json`'/ arguments.json
+	#sed -i '12s/3.0.17/$(jq .electron package.json)/' arguments.json
 	sed -i '12s/3.0.17/9.3.4/' arguments.json
 	jq -s '.[0] * .[1]' package.json arguments.json > package.json.new
 	mv package.json.new package.json
