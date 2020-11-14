@@ -1,4 +1,5 @@
-# Maintainer: Zhang Hua <zhanghua.00@qq.com>
+# Maintainer: Zhang Hua <https://github.com/zhanghua000>
+# Contributer: Fuck-XuexiQiangguo <https://github.com/fuck-xuexiqiangguo>
 pkgname=fxxk-xuexiqianguo-git
 pkgver="1.0.3"
 pkgrel=1

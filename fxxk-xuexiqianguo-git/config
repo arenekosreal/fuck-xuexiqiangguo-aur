@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = https://hub.fastgit.org/fuck-xuexiqiangguo/source-code
+	fetch = +refs/*:refs/*
+	mirror = true
