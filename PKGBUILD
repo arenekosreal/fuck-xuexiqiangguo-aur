@@ -1,10 +1,10 @@
 # Maintainer: Zhang Hua <https://github.com/zhanghua000>
 # Contributer: Fuck-XuexiQiangguo <https://github.com/fuck-xuexiqiangguo>
-pkgname=fxxk-xuexiqianguo-git
+pkgname=fxxk-xuexiqiangguo-git
 pkgver="1.0.3"
 pkgrel=1
 pkgdesc="一款帮助成年人（或许未来包括小朋友）自动学刁的软件"
-arch=( "aarch64" "x86_64" "i686" "armv7l"  )
+arch=( "aarch64" "x86_64" "i686" "armv7l" )
 url="https://github.com/fuck-xuexiqiangguo/source-code"
 licence=('MIT')
 depends=( 'wget' 'unzip' 'gtk3' 'xorg-server-xvfb' 'libxss' 'alsa-lib' )
