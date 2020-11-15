@@ -27,6 +27,7 @@ pkgver(){
 }
 prepare(){
 	cd "${srcdir}/${pkgname}"
+	yarn install
 	install -D ${srcdir}/${pkgname}/logo.png build/logo.png
 	install -D ${srcdir}/arguments.json arguments.json
 	yarn add electron-builder --dev
