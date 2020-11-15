@@ -11,8 +11,8 @@ depends=( 'wget' 'unzip' 'gtk3' 'xorg-server-xvfb' 'libxss' 'alsa-lib' )
 makedepends=( 'yarn' 'git' 'jq' )
 source=(
 	"${pkgname}::git+https://hub.fastgit.org/fuck-xuexiqiangguo/source-code"
-	"arguments.json"
-	"fuck-xuexiqiangguo.desktop"
+	"arguments.json::https://raw.fastgit.org/zhanghua000/fuck-xuexiqiangguo-aur/main/arguments.json"
+	"fuck-xuexiqiangguo.desktop::https://raw.fastgit.org/zhanghua000/fuck-xuexiqiangguo-aur/main/fuck-xuexiqiangguo.desktop"
 )
 md5sums=(
 	"SKIP"
@@ -27,9 +27,9 @@ pkgver(){
 }
 prepare(){
 	cd "${srcdir}/${pkgname}"
-	yarn install
 	install -D ${srcdir}/${pkgname}/logo.png build/logo.png
 	install -D ${srcdir}/arguments.json arguments.json
+	yarn install
 	yarn add electron-builder --dev
 	#sed -i '12s/3.0.17/$(jq .electron package.json)/' arguments.json
 	sed -i '12s/3.0.17/9.3.4/' arguments.json
